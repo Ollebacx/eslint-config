@@ -31,11 +31,7 @@ function App() {
         {todos.map((element, index) => (
           <li key={element}>
             {element}
-            <button
-              disabled
-              type="button"
-              onClick={() => handleRemoveTodo(index)}
-            >
+            <button type="button" onClick={() => handleRemoveTodo(index)}>
               X
             </button>
           </li>
